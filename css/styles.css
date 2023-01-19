@@ -1,7 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-  width: 100%;
   --color-azul: #2196f3;
   --color-negro: #212121;
   font-family: "Roboto", "arial", sans-serif;
@@ -11,7 +10,7 @@ body {
 }
 
 .container {
-  width: 1200px;
+  max-width: 1200px;
 }
 
 /* Aqui comienza el header*/
@@ -84,19 +83,12 @@ body {
   font-weight: 500;
   color: #757575;
   text-decoration: none;
+  margin: 0 30px 0 7px;
 }
 
 .top-contact:hover,
 .top-contact:focus {
   color: var(--color-azul);
-}
-
-.mail {
-  margin: 0 30px 0 7px;
-}
-
-.phone {
-  margin-left: 7px;
 }
 
 /* Aqui termina el header */
@@ -109,7 +101,8 @@ body {
   background-color: #f5f4fa;
   border: 0;
   border-radius: 4px;
-  margin: 0 4px 50px 4px;
+  margin: 0 4px;
+  padding: 0;
 }
 
 .button:hover,
@@ -136,7 +129,7 @@ body {
 }
 
 .apps {
-  width: 148px;
+  width: 145px;
   height: 38px;
 }
 
@@ -155,8 +148,7 @@ body {
 /* Aqui comienza las imagenes (portfolio) */
 
 .section-portfolio {
-  margin-top: 106px;
-  margin-bottom: 82px;
+  padding: 94px 0;
 }
 
 .portfolio-list {
@@ -167,7 +159,7 @@ body {
 
 ul.portfolio-list {
   margin: 0;
-  padding: 0;
+  padding: 25px 0;
 }
 
 .work-section {
@@ -180,6 +172,10 @@ ul.portfolio-list {
 
 .image-potfolio {
   text-decoration: none;
+}
+
+.image-potfolio img {
+  display: block;
 }
 
 .image-potfolio:hover,
@@ -258,9 +254,9 @@ ul.portfolio-list {
 }
 
 .company-value {
+  width: 270px;
   margin: 94px 15px 0 15px;
   display: inline-block;
-  width: 270px;
 }
 
 .title-value {
@@ -270,7 +266,7 @@ ul.portfolio-list {
 }
 
 .text-values {
-  margin: 14px 0 0 0;
+  margin: 9px 0 0 0;
   line-height: 1.5em;
   color: var(--color-negro);
 }
@@ -282,6 +278,7 @@ ul.portfolio-list {
 .wwd {
   width: 100%;
   text-align: center;
+  padding: 100px 0 94px;
 }
 
 .wwd-group {
@@ -294,13 +291,17 @@ ul.portfolio-list {
 }
 
 .wwd-title {
-  margin: 94px 0 55px 0;
+  margin: 0 0 50px 0;
   font-size: 36px;
   font-weight: 700;
 }
 
 .wwd-images {
-  margin: 0 15px 95px;
+  margin: 0 15px 0;
+}
+
+.wwd-images img {
+  display: block;
 }
 
 /* Aqui termina what we do (studio-index) */
@@ -308,18 +309,16 @@ ul.portfolio-list {
 /* Aqui comienza Our team (studio-index) */
 
 .ot {
+  padding: 50px 0 94px;
   width: 100%;
   background-color: #f5f4fa;
-  margin: 0;
-  padding: 0;
 }
 
 .ot-section-title {
-  padding: 95px 0 50px 0;
   font-size: 36px;
   font-weight: 700;
   text-align: center;
-  margin: 0;
+  margin-bottom: 50px;
 }
 
 ul.ot-team-group {
@@ -335,10 +334,14 @@ ul.ot-team-group {
   width: 270px;
   height: 368px;
   display: inline-block;
-  margin: 0 15px 94px 15px;
+  margin: 0 15px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+
+.ot-team img {
+  display: block;
 }
 
 .ot-title {
@@ -346,8 +349,7 @@ ul.ot-team-group {
   font-size: 16px;
   font-weight: 500;
   color: var(--color-negro);
-  margin-top: 30px;
-  margin-bottom: 10px;
+  margin: 30px 0 10px;
 }
 
 .charge {
