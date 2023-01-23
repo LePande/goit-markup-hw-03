@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="./css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,185 +15,214 @@
     <title>portfolio</title>
   </head>
   <body>
-    <div class="container"></div>
-    <header class="top-page">
-      <nav class="top-nav">
+    <div class="container">
+      <header class="top-page">
+        <nav class="top-nav">
+          <a class="logo" href="./index.html">WebStudio</a>
+          <ul class="top-page-buttons">
+            <li>
+              <a class="top-button" href="./index.html">Studio</a>
+            </li>
+            <li>
+              <a class="top-button active" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li>
+              <a class="top-button" href="#">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="top-contacts">
+          <li>
+            <a class="top-contact" href="mailto:info@devstudio.com"
+              >info@devstudio.com
+            </a>
+          </li>
+          <li>
+            <a class="top-contact" href="tel:+34678567876"> +1 212-772-4150 </a>
+          </li>
+        </ul>
+      </header>
+      <main>
+        <section class="section-portfolio">
+          <ul class="portfolio-list">
+            <li>
+              <button class="portfolio-list-button all" type="button">
+                All
+              </button>
+            </li>
+            <li>
+              <button class="portfolio-list-button web" type="button">
+                Web-sites
+              </button>
+            </li>
+            <li>
+              <button class="portfolio-list-button apps" type="button">
+                Apps
+              </button>
+            </li>
+            <li>
+              <button class="portfolio-list-button design" type="button">
+                Design
+              </button>
+            </li>
+            <li>
+              <button class="portfolio-list-button marketing" type="button">
+                Marketing
+              </button>
+            </li>
+          </ul>
+          <ul class="portfolio-list-sections">
+            <li class="portfolio-list-section">
+              <a href="#" class="portfolio-list-section-link">
+                <img
+                  src="./images/img-portfolio/technoduck.jpg"
+                  alt="Portátil mostrando un sitio web"
+                  width="370"
+                />
+                <div class="portfolio-list-section-info">
+                  <h2 class="portfolio-list-section-title">Technoduck</h2>
+                  <p class="portfolio-list-section-description">Web-site</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-list-section">
+              <a href="#" class="portfolio-list-section-link">
+                <img
+                  src="./images/img-portfolio/poster-basketball.jpg"
+                  alt="Poster basketball"
+                  width="370"
+                />
+                <div class="portfolio-list-section-info">
+                  <h2 class="portfolio-list-section-title">
+                    Poster New Orlean vs Golden Star
+                  </h2>
+                  <p class="portfolio-list-section-description">Design</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-list-section">
+              <a href="#" class="portfolio-list-section-link">
+                <img
+                  src="./images/img-portfolio/seafood-restaurant.jpg"
+                  alt="Logo de un restaurante de comida de mar"
+                  width="370"
+                />
+                <div class="portfolio-list-section-info">
+                  <h2 class="portfolio-list-section-title">
+                    Seafood Restaurant
+                  </h2>
+                  <p class="portfolio-list-section-description">Apps</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-list-section">
+              <a href="#" class="portfolio-list-section-link">
+                <img
+                  src="./images/img-portfolio/project-prime.jpg"
+                  alt="Unos audífonos"
+                  width="370"
+                />
+                <div class="portfolio-list-section-info">
+                  <h2 class="portfolio-list-section-title">Project Prime</h2>
+                  <p class="portfolio-list-section-description">Marketing</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-list-section">
+              <a href="#" class="portfolio-list-section-link">
+                <img
+                  src="./images/img-portfolio/project-boxes.jpg"
+                  alt="Diseño de empaques"
+                  width="370"
+                />
+                <div class="portfolio-list-section-info">
+                  <h2 class="portfolio-list-section-title">Project Boxes</h2>
+                  <p class="portfolio-list-section-description">Apps</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-list-section">
+              <a href="#" class="portfolio-list-section-link">
+                <img
+                  src="./images/img-portfolio/inspiration-has-no-borders.jpg"
+                  alt="Unos audífonos"
+                  width="370"
+                />
+                <div class="portfolio-list-section-info">
+                  <h2 class="portfolio-list-section-title">
+                    Inspiration has no Borders
+                  </h2>
+                  <p class="portfolio-list-section-description">Web site</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-list-section">
+              <a href="#" class="portfolio-list-section-link">
+                <img
+                  src="./images/img-portfolio/limited-edition.jpg"
+                  alt="Diseño editorial"
+                  width="370"
+                />
+                <div class="portfolio-list-section-info">
+                  <h2 class="portfolio-list-section-title">Limited Edition</h2>
+                  <p class="portfolio-list-section-description">Design</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-list-section">
+              <a href="#" class="portfolio-list-section-link">
+                <img
+                  src="./images/img-portfolio/project-lab.jpg"
+                  alt="Etiqueta blanca con letras negras"
+                  width="370"
+                />
+                <div class="portfolio-list-section-info">
+                  <h2 class="portfolio-list-section-title">Project LAB</h2>
+                  <p class="portfolio-list-section-description">Marketing</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-list-section">
+              <a href="#" class="portfolio-list-section-link">
+                <img
+                  src="./images/img-portfolio/growing-business.jpg"
+                  alt="Hombre escribiendo en una laptop"
+                  width="370"
+                />
+                <div class="portfolio-list-section-info">
+                  <h2 class="portfolio-list-section-title">Growing Business</h2>
+                  <p class="portfolio-list-section-description">Apps</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </main>
+      <footer class="footer-contacts">
         <a class="logo" href="./index.html">WebStudio</a>
-        <ul>
-          <li class="top-page-button">
-            <a class="top-button studio-link" href="./index.html">Studio</a>
-          </li>
-          <li class="top-page-button">
-            <a class="top-button portfolio-link active" href="./portfolio.html"
-              >Portfolio</a
-            >
-          </li>
-          <li class="top-page-button">
-            <a class="top-button contact-link" href="#">Contacts</a>
-          </li>
-        </ul>
-      </nav>
-      <section class="top-contacts">
-        <img
-          class="top-contact-icon"
-          src="images/img-portfolio/mail.svg"
-          alt="Mail icon"
-        />
-        <a class="top-contact mail" href="mailto:info@devstudio.com"
-          >info@devstudio.com</a
-        >
-        <img
-          class="top-contact-icon"
-          src="images/img-portfolio/phone.svg"
-          alt="Phone icon"
-        />
-        <a class="top-contact phone" href="tel:+34678567876">
-          +1 212-772-4150
-        </a>
-      </section>
-    </header>
-    <main>
-      <section class="section-portfolio">
-        <ul class="portfolio-list">
-          <li class="filter-button">
-            <button class="button all" type="button">All</button>
-          </li>
-          <li class="filter-button">
-            <button class="button web" type="button">Web-sites</button>
-          </li>
-          <li class="filter-button">
-            <button class="button apps" type="button">Apps</button>
-          </li>
-          <li class="filter-button">
-            <button class="button design" type="button">Design</button>
-          </li>
-          <li class="filter-button">
-            <button class="button marketing" type="button">Marketing</button>
-          </li>
-        </ul>
-        <ul class="portfolio-list">
-          <li class="work-section">
-            <a href="#" class="image-potfolio">
-              <img
-                src="./images/img-portfolio/technoduck.jpg"
-                alt="Portátil mostrando un sitio web"
-                width="370"
-              />
-              <h3 class="title-images">Technoduck</h3>
-              <p class="filter-description">Web-site</p>
-            </a>
-          </li>
-          <li class="work-section">
-            <a href="#" class="image-potfolio">
-              <img
-                src="./images/img-portfolio/poster-basketball.jpg"
-                alt="Poster basketball"
-                width="370"
-              />
-              <h3 class="title-images">Poster New Orlean vs Golden Star</h3>
-              <p class="filter-description">Design</p>
-            </a>
-          </li>
-          <li class="work-section">
-            <a href="#" class="image-potfolio">
-              <img
-                src="./images/img-portfolio/seafood-restaurant.jpg"
-                alt="Logo de un restaurante de comida de mar"
-                width="370"
-              />
-              <h3 class="title-images">Seafood Restaurant</h3>
-              <p class="filter-description">Apps</p>
-            </a>
-          </li>
-          <li class="work-section">
-            <a href="#" class="image-potfolio">
-              <img
-                src="./images/img-portfolio/project-prime.jpg"
-                alt="Unos audífonos"
-                width="370"
-              />
-              <h3 class="title-images">Project Prime</h3>
-              <p class="filter-description">Marketing</p>
-            </a>
-          </li>
-          <li class="work-section">
-            <a href="#" class="image-potfolio">
-              <img
-                src="./images/img-portfolio/project-boxes.jpg"
-                alt="Diseño de empaques"
-                width="370"
-              />
-              <h3 class="title-images">Project Boxes</h3>
-              <p class="filter-description">Apps</p>
-            </a>
-          </li>
-          <li class="work-section">
-            <a href="#" class="image-potfolio">
-              <img
-                src="./images/img-portfolio/inspiration-has-no-borders.jpg"
-                alt="Unos audífonos"
-                width="370"
-              />
-              <h3 class="title-images">Inspiration has no Borders</h3>
-              <p class="filter-description">Web site</p>
-            </a>
-          </li>
-          <li class="work-section">
-            <a href="#" class="image-potfolio">
-              <img
-                src="./images/img-portfolio/limited-edition.jpg"
-                alt="Diseño editorial"
-                width="370"
-              />
-              <h3 class="title-images">Limited Edition</h3>
-              <p class="filter-description">Design</p>
-            </a>
-          </li>
-          <li class="work-section">
-            <a href="#" class="image-potfolio">
-              <img
-                src="./images/img-portfolio/project-lab.jpg"
-                alt="Etiqueta blanca con letras negras"
-                width="370"
-              />
-              <h3 class="title-images">Project LAB</h3>
-              <p class="filter-description">Marketing</p>
-            </a>
-          </li>
-          <li class="work-section">
-            <a href="#" class="image-potfolio">
-              <img
-                src="./images/img-portfolio/growing-business.jpg"
-                alt="Hombre escribiendo en una laptop"
-                width="370"
-              />
-              <h3 class="title-images">Growing Business</h3>
-              <p class="filter-description">Apps</p>
-            </a>
-          </li>
-        </ul>
-      </section>
-    </main>
-    <footer>
-      <a class="logo-footer" href="./index.html">WebStudio</a>
-      <address>
-        <ul>
-          <li class="end-infos">
-            <p class="end-info">
-              695 Park Ave, New York, NY 10065, <br />
-              United States
-            </p>
-          </li>
-          <li class="end-infos">
-            <a class="end-info" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="end-infos">
-            <a class="end-info" href="tel:+34678567876"> +1 212-772-4150 </a>
-          </li>
-        </ul>
-      </address>
-    </footer>
+        <address>
+          <ul class="end-infos">
+            <li>
+              <a
+                class="address-end-info"
+                href="https://goo.gl/maps/2f3CK9dGhR3WqKyp9"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                695 aark Ave, New York, NY 10065, United States
+              </a>
+            </li>
+            <li>
+              <a class="end-info" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="end-info" href="tel:+34678567876"> +1 212-772-4150 </a>
+            </li>
+          </ul>
+        </address>
+      </footer>
+    </div>
   </body>
 </html>

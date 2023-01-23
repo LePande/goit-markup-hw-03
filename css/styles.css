@@ -1,58 +1,61 @@
 body {
-  margin: 0;
-  padding: 0;
   --color-azul: #2196f3;
   --color-negro: #212121;
+  --color-gris: #757575;
+  --color-blanco: #ffffff;
+  --color-gris-claro: #f5f4fa;
   font-family: "Roboto", "arial", sans-serif;
-  background-color: #ffffff;
   font-size: 14px;
   font-weight: 400;
-}
-
-.container {
-  max-width: 1200px;
+  line-height: 1.1;
+  background-color: var(--color-blanco);
+  box-sizing: border-box;
 }
 
 /* Aqui comienza el header*/
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
 .top-page {
   display: flex;
   justify-content: space-between;
-  height: 80px;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 24px 0 25px;
   border-bottom: 1px solid #ececec;
 }
 
 .top-nav {
-  min-width: 520px;
   display: flex;
-  align-items: center;
-  margin-left: 215px;
-}
-
-.top-nav ul {
-  margin: 0;
-  padding: 0;
-}
-
-.top-page-button {
-  display: inline-block;
+  flex-wrap: wrap;
 }
 
 .logo {
-  width: 145px;
-  height: 31px;
   font-family: "raleway", sans-serif;
   font-size: 26px;
   font-weight: 700;
+  line-height: 1.3;
   text-decoration: none;
   color: var(--color-azul);
-  margin-right: 30px;
+  margin-right: 1em;
+}
+
+.top-page-buttons {
+  display: flex;
+  list-style: none;
+  padding: 0;
 }
 
 .top-button {
   font-weight: 500;
   color: var(--color-negro);
   text-decoration: none;
+  margin: 2em;
 }
 
 .top-button:hover,
@@ -65,25 +68,19 @@ body {
   color: var(--color-azul);
 }
 
-.studio-link,
-.portfolio-link,
-.contact-link {
-  margin: 0 30px;
-}
-
 .top-contacts {
-  min-width: 350px;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  margin-right: 215px;
+  align-items: flex-end;
+  list-style: none;
+  padding: 0;
 }
 
 .top-contact {
   font-weight: 500;
-  color: #757575;
+  color: var(--color-gris);
   text-decoration: none;
-  margin: 0 30px 0 7px;
+  margin-left: 2em;
+  padding: 0;
 }
 
 .top-contact:hover,
@@ -95,107 +92,92 @@ body {
 
 /* Aqui comienza los botones de filtrado */
 
-.button {
-  font-weight: 700;
-  color: var(--color-negro);
-  background-color: #f5f4fa;
-  border: 0;
-  border-radius: 4px;
-  margin: 0 4px;
+.portfolio-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 106px 0 50px;
   padding: 0;
 }
 
-.button:hover,
-.button:focus,
-.button:active {
+.portfolio-list li {
+  margin: 0 4px;
+}
+
+.portfolio-list-button {
+  font-family: "Roboto", "arial", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6;
+  color: var(--color-negro);
+  background-color: var(--color-gris-claro);
+  padding: 6px 26px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.portfolio-list-button:hover,
+.portfolio-list-button:focus,
+.portfolio-list-button:active {
   background-color: var(--color-azul);
-  color: #ffffff;
+  color: var(--color-blanco);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
-.filter-button {
-  display: inline-block;
-}
-
-.all {
-  width: 73px;
-  height: 38px;
-}
-
-.web {
-  width: 128px;
-  height: 38px;
-}
-
-.apps {
-  width: 145px;
-  height: 38px;
-}
-
-.design {
-  width: 103px;
-  height: 38px;
-}
-
-.marketing {
-  width: 130px;
-  height: 38px;
 }
 
 /* Aqui termina los botones de filtrado */
 
 /* Aqui comienza las imagenes (portfolio) */
 
-.section-portfolio {
-  padding: 94px 0;
-}
-
-.portfolio-list {
+.portfolio-list-sections {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
-}
-
-ul.portfolio-list {
   margin: 0;
-  padding: 25px 0;
+  padding: 0;
+  margin-bottom: 94px;
+  list-style: none;
+  gap: 30px;
 }
 
-.work-section {
-  width: 370px;
-  height: 404px;
-  display: flex;
-  border: 1px solid #eeeeee;
-  margin: 15px;
+.portfolio-list-section {
+  border-bottom: 1px solid #eeeeee;
+  flex-basis: calc((100% - 90px) / 3);
 }
 
-.image-potfolio {
-  text-decoration: none;
-}
-
-.image-potfolio img {
-  display: block;
-}
-
-.image-potfolio:hover,
-.image-potfolio:focus,
-.image-potfolio:active {
+.portfolio-list-section:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.title-images {
-  font-size: 18px;
-  font-weight: 900;
-  color: var(--color-negro);
-  padding-left: 20px;
+.portfolio-list-section-link {
+  text-decoration: none;
 }
 
-.filter-description {
-  font-size: 16px;
+.portfolio-list-section img {
+  display: block;
+}
+
+.portfolio-list-section-info {
+  padding: 20px 24px;
+}
+
+.portfolio-list-section-title {
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 2;
   color: var(--color-negro);
-  padding-left: 20px;
+  text-decoration: none;
+  margin: 0;
+}
+
+.portfolio-list-section-description {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--color-gris);
+  margin: 0;
 }
 
 /* Aqui termina las imagenes (portfolio) */
@@ -203,34 +185,37 @@ ul.portfolio-list {
 /* Aqui comienza seccion heroes (studio-index) */
 
 .top-banner {
-  width: 100%;
-  height: 600px;
   background-color: var(--color-negro);
   text-align: center;
 }
 
-.slogan {
-  margin: 0;
-  padding: 200px 0 30px;
-  font-weight: 700;
-  font-size: 44px;
-  color: #ffffff;
+.top-banner-wraper {
+  padding: 80px 80px;
 }
 
-.request {
-  width: 261px;
-  height: 50px;
+.top-banner-slogan {
+  font-size: 44px;
   font-weight: 700;
+  line-height: 1.3;
+  color: var(--color-blanco);
+  margin: 0 0 30px 0;
+  border: 0;
+}
+
+.top-banner-button-request {
+  padding: 10px 20px;
   font-size: 16px;
-  color: #ffffff;
+  font-weight: 700;
+  line-height: 1.8;
+  color: var(--color-blanco);
   background-color: var(--color-azul);
   border: 0;
   border-radius: 4px;
   cursor: pointer;
 }
 
-.request:hover,
-.request:focus {
+.top-banner-button-request:hover,
+.top-banner-button-request:focus {
   background-color: #188ce8;
 }
 
@@ -238,171 +223,155 @@ ul.portfolio-list {
 
 /* Aqui comienza valores corporativos (studio-index) */
 
-.company-values {
+.section-values {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  width: 100%;
-  text-align: center;
 }
 
-.container-value {
+.list-value {
   display: flex;
-  text-align: center;
+  justify-content: space-between;
+  list-style: none;
+  padding-top: 94px;
+  padding-left: 0;
   margin: 0;
-  padding: 0;
 }
 
-.company-value {
-  width: 270px;
-  margin: 94px 15px 0 15px;
-  display: inline-block;
+.list-value li {
+  margin: 0 15px;
 }
 
 .title-value {
-  margin: 0;
   font-weight: 700;
   color: var(--color-negro);
+  margin: 0;
 }
 
-.text-values {
-  margin: 9px 0 0 0;
-  line-height: 1.5em;
-  color: var(--color-negro);
+.text-value {
+  width: 270px;
+  line-height: 1.7;
+  color: var(--color-gris);
+  margin: 0;
 }
 
 /* Aqui termina valores corporativos (studio-index) */
 
 /* Aqui comienza what we do (studio-index) */
 
-.wwd {
-  width: 100%;
+.section-what-we-do {
   text-align: center;
-  padding: 100px 0 94px;
+  margin: 94px 0;
 }
 
-.wwd-group {
+.what-we-do-group {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  list-style: none;
-  margin: 0;
+  margin-top: 50px;
+  margin-bottom: 0;
   padding: 0;
+  list-style: none;
 }
 
-.wwd-title {
-  margin: 0 0 50px 0;
+.what-we-do-group img {
+  display: block;
+  margin: 0 15px;
+}
+
+.what-we-do-title {
   font-size: 36px;
   font-weight: 700;
-}
-
-.wwd-images {
-  margin: 0 15px 0;
-}
-
-.wwd-images img {
-  display: block;
+  color: var(--color-negro);
+  margin: 0;
 }
 
 /* Aqui termina what we do (studio-index) */
 
 /* Aqui comienza Our team (studio-index) */
 
-.ot {
-  padding: 50px 0 94px;
-  width: 100%;
-  background-color: #f5f4fa;
-}
-
-.ot-section-title {
-  font-size: 36px;
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-ul.ot-team-group {
-  margin: 0;
-  padding: 0;
+.section-our-team {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: var(--color-gris-claro);
+  padding: 94px 0;
 }
 
-.ot-team {
-  background-color: #ffffff;
-  width: 270px;
-  height: 368px;
-  display: inline-block;
+.our-team-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-top: 50px;
+  margin-bottom: 0;
+  padding: 0;
+  flex-basis: calc((100% - 80px) / 3);
+}
+
+.our-team-list-item {
+  background-color: var(--color-blanco);
   margin: 0 15px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
+  border-radius: 0 0 4px 4px;
 }
 
-.ot-team img {
+.our-team-list-item img {
   display: block;
 }
 
-.ot-title {
-  text-align: center;
-  font-size: 16px;
-  font-weight: 500;
-  color: var(--color-negro);
-  margin: 30px 0 10px;
+.our-team-info-wrapper {
+  padding: 30px 0;
 }
 
-.charge {
-  margin: 0;
-  font-size: 16px;
+.our-team-title {
+  font-size: 36px;
+  font-weight: 700;
   color: var(--color-negro);
-  text-align: center;
+  margin: 0;
+}
+
+.our-team-charge {
+  font-size: 16px;
+  color: var(--color-gris);
+  margin: 0;
+}
+
+.our-team {
+  margin: 0;
+  margin-bottom: 10px;
 }
 
 /* Aqui termina Our team (studio-index) */
 
 /* Aqui comienza el footer */
 
-footer {
-  width: 100%;
-  height: 252px;
+.footer-contacts {
+  padding: 60px 0;
   background-color: var(--color-negro);
 }
 
-.logo-footer {
-  width: 145px;
-  height: 31px;
-  display: inline-block;
-  font-family: "raleway", sans-serif;
-  font-size: 26px;
-  color: var(--color-azul);
-  margin: 60px 0 9px 215px;
-  text-decoration: none;
-}
-
-address {
-  margin-left: 215px;
-  color: #ffffff;
-}
-
-address ul {
+.end-infos {
+  max-width: 230px;
   margin: 0;
   padding: 0;
-}
-
-.end-infos {
   list-style: none;
 }
 
-.end-info {
+.address-end-info {
+  line-height: 1.7;
   font-style: normal;
-  color: #ffffff;
-  line-height: 1.5em;
-  margin: 0;
-  padding: 0;
+  text-decoration: none;
+  color: var(--color-blanco);
+}
+
+.end-info {
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
   text-decoration: none;
 }
 
+.address-end-info:hover,
+.address-end-info:focus,
 .end-info:hover,
 .end-info:focus {
   color: var(--color-azul);
