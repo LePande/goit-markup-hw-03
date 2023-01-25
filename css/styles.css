@@ -180,11 +180,23 @@ body {
 /* Aqui comienza seccion heroes (studio-index) */
 
 .top-banner {
+<<<<<<< HEAD
   padding: 200px 200px;
+=======
+  display: flex;
+  justify-content: center;
+  padding: 203px 200px;
+>>>>>>> 40ca31ededc4b51da214237e72859d04a5254b86
   background-color: var(--color-negro);
   text-align: center;
 }
 
+<<<<<<< HEAD
+=======
+.top-banner-wraper {
+}
+
+>>>>>>> 40ca31ededc4b51da214237e72859d04a5254b86
 .top-banner-slogan {
   font-size: 44px;
   font-weight: 700;
