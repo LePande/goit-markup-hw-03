@@ -18,7 +18,7 @@ body {
   width: 1200px;
   margin: 0 auto;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
 }
 
 .top-page {
@@ -185,12 +185,14 @@ body {
 /* Aqui comienza seccion heroes (studio-index) */
 
 .top-banner {
+  display: flex;
+  justify-content: center;
+  padding: 203px 200px;
   background-color: var(--color-negro);
   text-align: center;
 }
 
 .top-banner-wraper {
-  padding: 80px 80px;
 }
 
 .top-banner-slogan {
@@ -343,6 +345,11 @@ body {
 /* Aqui termina Our team (studio-index) */
 
 /* Aqui comienza el footer */
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+}
 
 .footer-contacts {
   padding: 60px 0;
